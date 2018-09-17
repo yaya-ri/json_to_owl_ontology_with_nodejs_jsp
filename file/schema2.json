@@ -1,0 +1,112 @@
+
+
+{
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "title": {
+      "$id": "/properties/title",
+      "type": "string",
+      "title": "The Title Schema ",
+      "default": "",
+      "examples": [
+        "Person"
+      ]
+    },
+    "type": {
+      "$id": "/properties/type",
+      "type": "string",
+      "title": "The Type Schema ",
+      "default": "",
+      "examples": [
+        "object"
+      ]
+    },
+    "properties": {
+      "$id": "/properties/properties",
+      "type": "object",
+      "properties": {
+        "firstName": {
+          "$id": "/properties/properties/properties/firstName",
+          "type": "object",
+          "properties": {
+            "type": {
+              "$id": "/properties/properties/properties/firstName/properties/type",
+              "type": "string",
+              "title": "The Type Schema ",
+              "default": "",
+              "examples": [
+                "string"
+              ]
+            }
+          }
+        },
+        "lastName": {
+          "$id": "/properties/properties/properties/lastName",
+          "type": "object",
+          "properties": {
+            "type": {
+              "$id": "/properties/properties/properties/lastName/properties/type",
+              "type": "string",
+              "title": "The Type Schema ",
+              "default": "",
+              "examples": [
+                "string"
+              ]
+            }
+          }
+        },
+        "age": {
+          "$id": "/properties/properties/properties/age",
+          "type": "object",
+          "properties": {
+            "description": {
+              "$id": "/properties/properties/properties/age/properties/description",
+              "type": "string",
+              "title": "The Description Schema ",
+              "default": "",
+              "examples": [
+                "Age in years"
+              ]
+            },
+            "type": {
+              "$id": "/properties/properties/properties/age/properties/type",
+              "type": "string",
+              "title": "The Type Schema ",
+              "default": "",
+              "examples": [
+                "integer"
+              ]
+            },
+            "minimum": {
+              "$id": "/properties/properties/properties/age/properties/minimum",
+              "type": "integer",
+              "title": "The Minimum Schema ",
+              "default": 0,
+              "examples": [
+                0
+              ]
+            }
+          }
+        }
+      }
+    },
+    "required": {
+      "$id": "/properties/required",
+      "type": "array",
+      "items": {
+        "$id": "/properties/required/items",
+        "type": "string",
+        "title": "The 0th Schema ",
+        "default": "",
+        "examples": [
+          "firstName",
+          "lastName"
+        ]
+      }
+    }
+  }
+}
+

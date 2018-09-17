@@ -1,0 +1,124 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "widget": {
+      "type": "object",
+      "properties": {
+        "debug": {
+          "type": "string",
+          "minLength": 1
+        },
+        "window": {
+          "type": "object",
+          "properties": {
+            "title": {
+              "type": "string",
+              "minLength": 1
+            },
+            "name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "width": {
+              "type": "number"
+            },
+            "height": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "title",
+            "name",
+            "width",
+            "height"
+          ]
+        },
+        "image": {
+          "type": "object",
+          "properties": {
+            "src": {
+              "type": "string",
+              "minLength": 1
+            },
+            "name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "hOffset": {
+              "type": "number"
+            },
+            "vOffset": {
+              "type": "number"
+            },
+            "alignment": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "src",
+            "name",
+            "hOffset",
+            "vOffset",
+            "alignment"
+          ]
+        },
+        "text": {
+          "type": "object",
+          "properties": {
+            "data": {
+              "type": "string",
+              "minLength": 1
+            },
+            "size": {
+              "type": "number"
+            },
+            "style": {
+              "type": "string",
+              "minLength": 1
+            },
+            "name": {
+              "type": "string",
+              "minLength": 1
+            },
+            "hOffset": {
+              "type": "number"
+            },
+            "vOffset": {
+              "type": "number"
+            },
+            "alignment": {
+              "type": "string",
+              "minLength": 1
+            },
+            "onMouseUp": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "data",
+            "size",
+            "style",
+            "name",
+            "hOffset",
+            "vOffset",
+            "alignment",
+            "onMouseUp"
+          ]
+        }
+      },
+      "required": [
+        "debug",
+        "window",
+        "image",
+        "text"
+      ]
+    }
+  },
+  "required": [
+    "widget"
+  ]
+}

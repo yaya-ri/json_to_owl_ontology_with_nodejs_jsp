@@ -1,0 +1,197 @@
+
+
+{
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "widget": {
+      "$id": "/properties/widget",
+      "type": "object",
+      "properties": {
+        "debug": {
+          "$id": "/properties/widget/properties/debug",
+          "type": "string",
+          "title": "The Debug Schema ",
+          "default": "",
+          "examples": [
+            "on"
+          ]
+        },
+        "window": {
+          "$id": "/properties/widget/properties/window",
+          "type": "object",
+          "properties1": {
+            "title": {
+              "$id": "/properties/widget/properties/window/properties/title",
+              "type": "string",
+              "title": "The Title Schema ",
+              "default": "",
+              "examples": [
+                "Sample Konfabulator Widget"
+              ]
+            },
+            "name": {
+              "$id": "/properties/widget/properties/window/properties/name",
+              "type": "string",
+              "title": "The Name Schema ",
+              "default": "",
+              "examples": [
+                "main_window"
+              ]
+            },
+            "width": {
+              "$id": "/properties/widget/properties/window/properties/width",
+              "type": "integer",
+              "title": "The Width Schema ",
+              "default": 0,
+              "examples": [
+                500
+              ]
+            },
+            "height": {
+              "$id": "/properties/widget/properties/window/properties/height",
+              "type": "integer",
+              "title": "The Height Schema ",
+              "default": 0,
+              "examples": [
+                500
+              ]
+            }
+          }
+        },
+        "image": {
+          "$id": "/properties/widget/properties/image",
+          "type": "object",
+          "properties2": {
+            "src": {
+              "$id": "/properties/widget/properties/image/properties/src",
+              "type": "string",
+              "title": "The Src Schema ",
+              "default": "",
+              "examples": [
+                "Images/Sun.png"
+              ]
+            },
+            "name": {
+              "$id": "/properties/widget/properties/image/properties/name",
+              "type": "string",
+              "title": "The Name Schema ",
+              "default": "",
+              "examples": [
+                "sun1"
+              ]
+            },
+            "hOffset": {
+              "$id": "/properties/widget/properties/image/properties/hOffset",
+              "type": "integer",
+              "title": "The Hoffset Schema ",
+              "default": 0,
+              "examples": [
+                250
+              ]
+            },
+            "vOffset": {
+              "$id": "/properties/widget/properties/image/properties/vOffset",
+              "type": "integer",
+              "title": "The Voffset Schema ",
+              "default": 0,
+              "examples": [
+                250
+              ]
+            },
+            "alignment": {
+              "$id": "/properties/widget/properties/image/properties/alignment",
+              "type": "string",
+              "title": "The Alignment Schema ",
+              "default": "",
+              "examples": [
+                "center"
+              ]
+            }
+          }
+        },
+        "text": {
+          "$id": "/properties/widget/properties/text",
+          "type": "object",
+          "properties3": {
+            "data": {
+              "$id": "/properties/widget/properties/text/properties/data",
+              "type": "string",
+              "title": "The Data Schema ",
+              "default": "",
+              "examples": [
+                "Click Here"
+              ]
+            },
+            "size": {
+              "$id": "/properties/widget/properties/text/properties/size",
+              "type": "integer",
+              "title": "The Size Schema ",
+              "default": 0,
+              "examples": [
+                36
+              ]
+            },
+            "style": {
+              "$id": "/properties/widget/properties/text/properties/style",
+              "type": "string",
+              "title": "The Style Schema ",
+              "default": "",
+              "examples": [
+                "bold"
+              ]
+            },
+            "name": {
+              "$id": "/properties/widget/properties/text/properties/name",
+              "type": "string",
+              "title": "The Name Schema ",
+              "default": "",
+              "examples": [
+                "text1"
+              ]
+            },
+            "hOffset": {
+              "$id": "/properties/widget/properties/text/properties/hOffset",
+              "type": "integer",
+              "title": "The Hoffset Schema ",
+              "default": 0,
+              "examples": [
+                250
+              ]
+            },
+            "vOffset": {
+              "$id": "/properties/widget/properties/text/properties/vOffset",
+              "type": "integer",
+              "title": "The Voffset Schema ",
+              "default": 0,
+              "examples": [
+                100
+              ]
+            },
+            "alignment": {
+              "$id": "/properties/widget/properties/text/properties/alignment",
+              "type": "string",
+              "title": "The Alignment Schema ",
+              "default": "",
+              "examples": [
+                "center"
+              ]
+            },
+            "onMouseUp": {
+              "$id": "/properties/widget/properties/text/properties/onMouseUp",
+              "type": "string",
+              "title": "The Onmouseup Schema ",
+              "default": "",
+              "examples": [
+                "sun1.opacity = (sun1.opacity / 100) * 90;"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

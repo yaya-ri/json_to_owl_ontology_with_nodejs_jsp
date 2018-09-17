@@ -1,0 +1,117 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "kesehatan": {
+      "type": "object",
+      "properties": {
+        "penyakit": {
+          "type": "object",
+          "properties": {
+            "namaPenyakit": {
+              "type": "string",
+              "minLength": 1
+            },
+            "kode": {
+              "type": "string",
+              "minLength": 1
+            },
+            "id": {
+              "type": "number"
+            },
+            "obat": {
+              "type": "object",
+              "properties": {
+                "namaObat": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "kandungan": {
+                  "type": "object",
+                  "properties": {
+                    "senyawa": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "tumbuhan": {
+                      "type": "object",
+                      "properties": {
+                        "namaTumbuhan": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      },
+                      "required": [
+                        "namaTumbuhan"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "senyawa",
+                    "tumbuhan"
+                  ]
+                }
+              },
+              "required": [
+                "namaObat",
+                "kandungan"
+              ]
+            },
+            "obat1": {
+              "type": "object",
+              "properties": {
+                "namaObat1": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "kandungan1": {
+                  "type": "object",
+                  "properties": {
+                    "senyawa1": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "tumbuhan1": {
+                      "type": "object",
+                      "properties": {
+                        "namaTumbuhan1": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      },
+                      "required": [
+                        "namaTumbuhan1"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "senyawa1",
+                    "tumbuhan1"
+                  ]
+                }
+              },
+              "required": [
+                "namaObat1",
+                "kandungan1"
+              ]
+            }
+          },
+          "required": [
+            "namaPenyakit",
+            "kode",
+            "id",
+            "obat",
+            "obat1"
+          ]
+        }
+      },
+      "required": [
+        "penyakit"
+      ]
+    }
+  },
+  "required": [
+    "kesehatan"
+  ]
+}

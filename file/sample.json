@@ -1,0 +1,23 @@
+{
+  "registration": {
+    "name": "Vik Kumar",
+    "first_name": "Vik",
+    "last_name": "Kumar",
+    "bloodGroup": "B-",
+    "gender": "male",
+    "birthday": "10\/31\/1983",
+    "email": "vik.ceo\u0040gmail.com",
+    "cellPhone": "1234123456",
+    "homePhone": "1234123457",
+    "officePhone": "1234123458",
+    "primaryAddress": "jdfjfgj",
+    "area": "jfdjdfj",
+    "location": {
+      "name": "Redwood Shores, California",
+      "id": 103107903062719
+    },
+    "subscribe": true,
+    "eyePledge": false,
+    "reference": "fgfgfgfg"
+  }
+}

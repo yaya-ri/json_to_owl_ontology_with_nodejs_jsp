@@ -1,0 +1,189 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "kesehatan"
+  ],
+  "properties": {
+    "kesehatan": {
+      "$id": "#/properties/kesehatan",
+      "type": "object",
+      "title": "The Kesehatan Schema",
+      "required": [
+        "penyakit"
+      ],
+      "properties": {
+        "penyakit": {
+          "$id": "#/properties/kesehatan/properties/penyakit",
+          "type": "object",
+          "title": "The Penyakit Schema",
+          "required": [
+            "namaPenyakit",
+            "kode",
+            "id",
+            "obat",
+            "obat1"
+          ],
+          "properties": {
+            "namaPenyakit": {
+              "$id": "#/properties/kesehatan/properties/penyakit/properties/namaPenyakit",
+              "type": "string",
+              "title": "The Namapenyakit Schema",
+              "default": "",
+              "examples": [
+                "malaria"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "kode": {
+              "$id": "#/properties/kesehatan/properties/penyakit/properties/kode",
+              "type": "string",
+              "title": "The Kode Schema",
+              "default": "",
+              "examples": [
+                "tgxa"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "id": {
+              "$id": "#/properties/kesehatan/properties/penyakit/properties/id",
+              "type": "integer",
+              "title": "The Id Schema",
+              "default": 0,
+              "examples": [
+                102
+              ]
+            },
+            "obat": {
+              "$id": "#/properties/kesehatan/properties/penyakit/properties/obat",
+              "type": "object",
+              "title": "The Obat Schema",
+              "required": [
+                "namaObat",
+                "kandungan"
+              ],
+              "properties": {
+                "namaObat": {
+                  "$id": "#/properties/kesehatan/properties/penyakit/properties/obat/properties/namaObat",
+                  "type": "string",
+                  "title": "The Namaobat Schema",
+                  "default": "",
+                  "examples": [
+                    "obatMalaria"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "kandungan": {
+                  "$id": "#/properties/kesehatan/properties/penyakit/properties/obat/properties/kandungan",
+                  "type": "object",
+                  "title": "The Kandungan Schema",
+                  "required": [
+                    "senyawa",
+                    "tumbuhan"
+                  ],
+                  "properties": {
+                    "senyawa": {
+                      "$id": "#/properties/kesehatan/properties/penyakit/properties/obat/properties/kandungan/properties/senyawa",
+                      "type": "string",
+                      "title": "The Senyawa Schema",
+                      "default": "",
+                      "examples": [
+                        "a"
+                      ],
+                      "pattern": "^(.*)$"
+                    },
+                    "tumbuhan": {
+                      "$id": "#/properties/kesehatan/properties/penyakit/properties/obat/properties/kandungan/properties/tumbuhan",
+                      "type": "object",
+                      "title": "The Tumbuhan Schema",
+                      "required": [
+                        "namaTumbuhan"
+                      ],
+                      "properties": {
+                        "namaTumbuhan": {
+                          "$id": "#/properties/kesehatan/properties/penyakit/properties/obat/properties/kandungan/properties/tumbuhan/properties/namaTumbuhan",
+                          "type": "string",
+                          "title": "The Namatumbuhan Schema",
+                          "default": "",
+                          "examples": [
+                            "jahe"
+                          ],
+                          "pattern": "^(.*)$"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "obat1": {
+              "$id": "#/properties/kesehatan/properties/penyakit/properties/obat1",
+              "type": "object",
+              "title": "The Obat1 Schema",
+              "required": [
+                "namaObat1",
+                "kandungan1"
+              ],
+              "properties": {
+                "namaObat1": {
+                  "$id": "#/properties/kesehatan/properties/penyakit/properties/obat1/properties/namaObat1",
+                  "type": "string",
+                  "title": "The Namaobat1 Schema",
+                  "default": "",
+                  "examples": [
+                    "obatMalaria"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "kandungan1": {
+                  "$id": "#/properties/kesehatan/properties/penyakit/properties/obat1/properties/kandungan1",
+                  "type": "object",
+                  "title": "The Kandungan1 Schema",
+                  "required": [
+                    "senyawa1",
+                    "tumbuhan1"
+                  ],
+                  "properties": {
+                    "senyawa1": {
+                      "$id": "#/properties/kesehatan/properties/penyakit/properties/obat1/properties/kandungan1/properties/senyawa1",
+                      "type": "string",
+                      "title": "The Senyawa1 Schema",
+                      "default": "",
+                      "examples": [
+                        "a"
+                      ],
+                      "pattern": "^(.*)$"
+                    },
+                    "tumbuhan1": {
+                      "$id": "#/properties/kesehatan/properties/penyakit/properties/obat1/properties/kandungan1/properties/tumbuhan1",
+                      "type": "object",
+                      "title": "The Tumbuhan1 Schema",
+                      "required": [
+                        "namaTumbuhan1"
+                      ],
+                      "properties": {
+                        "namaTumbuhan1": {
+                          "$id": "#/properties/kesehatan/properties/penyakit/properties/obat1/properties/kandungan1/properties/tumbuhan1/properties/namaTumbuhan1",
+                          "type": "string",
+                          "title": "The Namatumbuhan1 Schema",
+                          "default": "",
+                          "examples": [
+                            "jahe"
+                          ],
+                          "pattern": "^(.*)$"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

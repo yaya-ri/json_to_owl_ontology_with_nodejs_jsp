@@ -1,0 +1,27 @@
+{
+  "kesehatan":{
+    "penyakit":{
+      "namaPenyakit":"malaria",
+        "kode":"tgxa",
+        "id":102,
+      "obat":{
+        "namaObat":"obatMalaria",
+        "kandungan" :{
+          "senyawa":"a",
+          "tumbuhan":{
+            "namaTumbuhan":"jahe"
+          }
+        }
+      },
+        "obat1":{
+        "namaObat1":"obatMalaria",
+        "kandungan1" :{
+          "senyawa1":"a",
+          "tumbuhan1":{
+            "namaTumbuhan1":"jahe"
+          }
+        }
+      }
+    }
+  }
+}

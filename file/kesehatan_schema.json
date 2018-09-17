@@ -1,0 +1,236 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "properties"
+  ],
+  "properties": {
+    "data": {
+      "$id": "#/properties/properties",
+      "type": "object",
+      "title": "The Properties Schema",
+      "required": [
+        "response",
+        "metaData",
+        "kesehatan"
+      ],
+      "properties": {
+        "response": {
+          "$id": "#/properties/properties/properties/response",
+          "type": "object",
+          "title": "The Response Schema",
+          "required": [
+            "count",
+            "list",
+            "list1",
+            "list2"
+          ],
+          "properties": {
+            "count": {
+              "$id": "#/properties/properties/properties/response/properties/count",
+              "type": "integer",
+              "title": "The Count Schema",
+              "default": 0,
+              "examples": [
+                33
+              ]
+            },
+            "list": {
+              "$id": "#/properties/properties/properties/response/properties/list",
+              "type": "object",
+              "title": "The List Schema",
+              "required": [
+                "kdDiag",
+                "nmDiag",
+                "nonSpesialis"
+              ],
+              "properties": {
+                "kdDiag": {
+                  "$id": "#/properties/properties/properties/response/properties/list/properties/kdDiag",
+                  "type": "string",
+                  "title": "The Kddiag Schema",
+                  "default": "",
+                  "examples": [
+                    "A001"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "nmDiag": {
+                  "$id": "#/properties/properties/properties/response/properties/list/properties/nmDiag",
+                  "type": "string",
+                  "title": "The Nmdiag Schema",
+                  "default": "",
+                  "examples": [
+                    "Cholera due to vibrio cholerae 01 biovar eltor"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "nonSpesialis": {
+                  "$id": "#/properties/properties/properties/response/properties/list/properties/nonSpesialis",
+                  "type": "boolean",
+                  "title": "The Nonspesialis Schema",
+                  "default": false,
+                  "examples": [
+                    false
+                  ]
+                }
+              }
+            },
+            "list1": {
+              "$id": "#/properties/properties/properties/response/properties/list1",
+              "type": "object",
+              "title": "The List1 Schema",
+              "required": [
+                "anak1List1",
+                "anak2List1"
+              ],
+              "properties": {
+                "anak1List1": {
+                  "$id": "#/properties/properties/properties/response/properties/list1/properties/anak1List1",
+                  "type": "object",
+                  "title": "The Anak1list1 Schema"
+                },
+                "anak2List1": {
+                  "$id": "#/properties/properties/properties/response/properties/list1/properties/anak2List1",
+                  "type": "object",
+                  "title": "The Anak2list1 Schema"
+                }
+              }
+            },
+            "list2": {
+              "$id": "#/properties/properties/properties/response/properties/list2",
+              "type": "object",
+              "title": "The List2 Schema",
+              "required": [
+                "anak1List2"
+              ],
+              "properties": {
+                "anak1List2": {
+                  "$id": "#/properties/properties/properties/response/properties/list2/properties/anak1List2",
+                  "type": "object",
+                  "title": "The Anak1list2 Schema"
+                }
+              }
+            }
+          }
+        },
+        "metaData": {
+          "$id": "#/properties/properties/properties/metaData",
+          "type": "object",
+          "title": "The Metadata Schema",
+          "required": [
+            "message",
+            "code"
+          ],
+          "properties": {
+            "message": {
+              "$id": "#/properties/properties/properties/metaData/properties/message",
+              "type": "string",
+              "title": "The Message Schema",
+              "default": "",
+              "examples": [
+                "OK"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "code": {
+              "$id": "#/properties/properties/properties/metaData/properties/code",
+              "type": "integer",
+              "title": "The Code Schema",
+              "default": 0,
+              "examples": [
+                200
+              ]
+            }
+          }
+        },
+        "kesehatan": {
+          "$id": "#/properties/properties/properties/kesehatan",
+          "type": "object",
+          "title": "The Kesehatan Schema",
+          "required": [
+            "penyakit"
+          ],
+          "properties": {
+            "penyakit": {
+              "$id": "#/properties/properties/properties/kesehatan/properties/penyakit",
+              "type": "object",
+              "title": "The Penyakit Schema",
+              "required": [
+                "nama",
+                "obat"
+              ],
+              "properties": {
+                "nama": {
+                  "$id": "#/properties/properties/properties/kesehatan/properties/penyakit/properties/nama",
+                  "type": "string",
+                  "title": "The Nama Schema",
+                  "default": "",
+                  "examples": [
+                    "malaria"
+                  ],
+                  "pattern": "^(.*)$"
+                },
+                "obat": {
+                  "$id": "#/properties/properties/properties/kesehatan/properties/penyakit/properties/obat",
+                  "type": "object",
+                  "title": "The Obat Schema",
+                  "required": [
+                    "nama",
+                    "kandungan"
+                  ],
+                  "properties": {
+                    "nama": {
+                      "$id": "#/properties/properties/properties/kesehatan/properties/penyakit/properties/obat/properties/nama",
+                      "type": "string",
+                      "title": "The Nama Schema",
+                      "default": "",
+                      "examples": [
+                        "obatMalaria"
+                      ],
+                      "pattern": "^(.*)$"
+                    },
+                    "kandungan": {
+                      "$id": "#/properties/properties/properties/kesehatan/properties/penyakit/properties/obat/properties/kandungan",
+                      "type": "object",
+                      "title": "The Kandungan Schema",
+                      "required": [
+                        "tumbuhan",
+                        "kandungan"
+                      ],
+                      "properties": {
+                        "tumbuhan": {
+                          "$id": "#/properties/properties/properties/kesehatan/properties/penyakit/properties/obat/properties/kandungan/properties/tumbuhan",
+                          "type": "string",
+                          "title": "The Tumbuhan Schema",
+                          "default": "",
+                          "examples": [
+                            "jahe"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "kandungan": {
+                          "$id": "#/properties/properties/properties/kesehatan/properties/penyakit/properties/obat/properties/kandungan/properties/kandungan",
+                          "type": "string",
+                          "title": "The Kandungan Schema",
+                          "default": "",
+                          "examples": [
+                            "a"
+                          ],
+                          "pattern": "^(.*)$"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

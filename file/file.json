@@ -1,0 +1,34 @@
+{
+  "numbers": [
+    {
+      "natural": "1",
+      "integer": "-1",
+      "real": "3.14159265",
+      "complex": {
+        "real": 10,
+        "imaginary": 2
+      },
+      "EOF": "yes"
+    }
+    {
+      "natural": "2",
+      "integer": "-1",
+      "real": "3.14159265",
+      "complex": {
+        "real": 10,
+        "imaginary": 2
+      },
+      "EOF": "yes"
+    }
+    {
+      "natural": "3",
+      "integer": "-1",
+      "real": "3.14159265",
+      "complex": {
+        "real": 10,
+        "imaginary": 2
+      },
+      "EOF": "yes"
+    }
+  ]
+}
